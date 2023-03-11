@@ -8,6 +8,5 @@ rule detect_phishing_campaign {
         $domain2 = "wellusfargo.com"
         $domain3 = "welwlsfargo.com"
     condition:
-        domain in {$weelsfargo.com $welalsfargo.com $welelsfargo.com} and
+        domain in {$domain1 $domain2 $domain3} and
         all of them
-}
